@@ -1,0 +1,29 @@
+<header></header>
+
+<container>
+    <div class="mainContainer">
+        <div class="divContainer">
+            <div>
+                <div class="labels">אני מטייל/ת ב:</div>
+                <select class="form-control" id="selectCountry"
+                        ng-change="showCurrancy()" ng-init="currentCountry" ng-model="currentCountry"
+                        ng-options="country as country.hebrewName for country in countries | orderBy:'hebrewName' track by country.name"></select>
+            </div>
+            <img id="flagImage" ng-src="images/flags/{{currentCountry.flagImage}}" />
+        </div>
+        <div class="divContainer">
+            <div class="labels">זה עולה: </div>
+            <span id="currancy" class="labels"></span>
+            <input class="form-control" id="priceInput" type="number" ng-model="price" autofocus>
+            <div ng-show="currentState" ng-bind="currentState" id="currentState"></div>
+        </div>
+        <div>
+            <button class="btn btn-primary" id="getAnswer" type="button" ng-click="calcPrice()">כמה זה יוצא בשקלים?</button>
+        </div>
+        <div ng-show="answer">
+            <span ng-bind="answer" id="answer" class="labels"></span>
+        </div>
+    </div>
+</container>
+
+<footer></footer>

@@ -1,0 +1,98 @@
+@font-face {
+    font-family: fontForApp;
+    src: url(../fonts/DanaYadAlefAlefAlef-Normal.woff);
+}
+
+body {
+    background-image: url("../images/background.jpg");
+    font-size: x-large;
+    font-family: fontForApp;
+}
+
+.mainContainer {
+    text-align: center;
+}
+
+.divContainer {
+    margin: 12%;
+    border-radius: 4%;
+    border-style: solid;
+    background-color: whitesmoke;
+    padding-bottom: 4%;
+    margin-top: 4%;
+    margin-bottom: -2%;
+    border-width: thin;
+}
+
+.headerTab {
+    height: 50px;
+    background-color: honeydew;
+    border-style: solid;
+    width: 50%;
+    display: inline-block;
+}
+
+#selectCountry {
+    width: 70%;
+    display: block;
+    margin: auto;
+    font-size: x-large;
+    height: 50px;
+    font-weight: bold;
+}
+
+#priceInput {
+    width: 40%;
+    display: inline-block;
+    margin: auto;
+    font-size: x-large;
+    height: 50px;
+    font-weight: bold;
+}
+
+#getAnswer {
+    padding: 10px;
+    margin: 30px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: darkblue;
+    border-color: whitesmoke;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.labels {
+    color: black;
+    font-weight: bold;
+}
+
+#currancy {
+    font-weight: normal;
+    font-size: smaller;
+}
+
+#answer {
+    font-size: larger;
+    font-weight: bold;
+    background-color: white;
+    padding: 12px;
+    text-decoration: underline;
+}
+
+#currentState {
+    font-size: small;
+    font-family: cursive;
+    font-family: sans-serif;
+}
+
+#flagImage {
+    height: 100px;
+    border-style: solid;
+    border-width: thin;
+    border-color: darkblue;
+    margin: 4%;
+}
+
+.divContainer {
+    padding-bottom: 0%;
+}
